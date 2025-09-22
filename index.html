@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn HTML5 Semantics and Accessibility</title>
+
+  <!-- SEO-friendly metadata -->
+  <meta name="description" content="A simple web page built with HTML5 semantics, accessibility best practices, and beginner-friendly SEO principles.">
+  <meta name="keywords" content="HTML5, semantics, accessibility, SEO, web development basics">
+  <meta name="author" content="Your Name">
+</head>
+<body>
+  <!-- Site Header -->
+  <header>
+    <h1>Welcome to My HTML5 Semantic Page</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- About Section -->
+    <section id="about">
+      <h2>About This Page</h2>
+      <p>
+        This page demonstrates the use of <strong>semantic HTML5 tags</strong>, 
+        accessibility-friendly attributes, and SEO techniques. 
+        Proper structure improves both human readability and search engine discoverability.
+      </p>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articles">
+      <h2>Featured Articles</h2>
+      
+      <article>
+        <header>
+          <h3>Understanding the HTML5 Semantic Elements</h3>
+        </header>
+        <p>
+          Semantic tags such as <code>&lt;header&gt;</code>, 
+          <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code> 
+          give meaning to web content and improve accessibility.
+        </p>
+      </article>
+
+      <article>
+        <header>
+          <h3>Accessibility Best Practices</h3>
+        </header>
+        <p>
+          Adding attributes like <code>aria-label</code> and 
+          using the correct heading order ensures screen readers 
+          and assistive technologies can interpret your page properly.
+        </p>
+      </article>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Have feedback or questions? Reach out via 
+        <a href="mailto:you@example.com">email</a>.
+      </p>
+      <form aria-label="Contact form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Semantic Page | Built with accessibility and SEO in mind</p>
+  </footer>
+</body>
+</html>
