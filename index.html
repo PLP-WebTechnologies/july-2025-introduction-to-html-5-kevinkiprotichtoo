@@ -1,89 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Learn HTML5 Semantics and Accessibility</title>
+  <head>
+    <!-- ✅ SEO & Accessibility Metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="An example of a semantic, accessible, and SEO-friendly HTML5 web page structure." />
+    <meta name="keywords" content="HTML5, Accessibility, SEO, Semantic Web, Web Development" />
+    <meta name="author" content="Kevin Kiprotich" />
+    <title>Accessible HTML5 Web Page | Kevin Kiprotich</title>
+  </head>
 
-  <!-- SEO-friendly metadata -->
-  <meta name="description" content="A simple web page built with HTML5 semantics, accessibility best practices, and beginner-friendly SEO principles.">
-  <meta name="keywords" content="HTML5, semantics, accessibility, SEO, web development basics">
-  <meta name="author" content="Your Name">
-</head>
-<body>
-  <!-- Site Header -->
-  <header>
-    <h1>Welcome to My HTML5 Semantic Page</h1>
-    <nav aria-label="Main navigation">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#articles">Articles</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <body>
+    <!-- ✅ Header Section -->
+    <header role="banner">
+      <h1>Welcome to My Accessible HTML5 Page</h1>
+      <p>A simple, semantic, and SEO-optimized web page.</p>
 
-  <!-- Main Content -->
-  <main>
-    <!-- About Section -->
-    <section id="about">
-      <h2>About This Page</h2>
-      <p>
-        This page demonstrates the use of <strong>semantic HTML5 tags</strong>, 
-        accessibility-friendly attributes, and SEO techniques. 
-        Proper structure improves both human readability and search engine discoverability.
-      </p>
-    </section>
+      <!-- ✅ Navigation -->
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#articles">Articles</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <!-- Articles Section -->
-    <section id="articles">
-      <h2>Featured Articles</h2>
-      
-      <article>
-        <header>
-          <h3>Understanding the HTML5 Semantic Elements</h3>
-        </header>
+    <!-- ✅ Main Content -->
+    <main id="main-content" role="main">
+      <!-- About Section -->
+      <section id="about">
+        <h2>About This Page</h2>
         <p>
-          Semantic tags such as <code>&lt;header&gt;</code>, 
-          <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code> 
-          give meaning to web content and improve accessibility.
+          This web page is created as part of the <strong>HTML5 + Accessibility & SEO Basics Assignment</strong>.
+          It demonstrates how to build a well-structured and readable HTML document using semantic tags.
         </p>
-      </article>
+        <figure>
+          <img
+            src="https://via.placeholder.com/600x300"
+            alt="A sample web layout illustration showing semantic HTML5 structure"
+          />
+          <figcaption>An illustration of semantic HTML5 layout structure.</figcaption>
+        </figure>
+      </section>
 
-      <article>
-        <header>
-          <h3>Accessibility Best Practices</h3>
-        </header>
-        <p>
-          Adding attributes like <code>aria-label</code> and 
-          using the correct heading order ensures screen readers 
-          and assistive technologies can interpret your page properly.
-        </p>
-      </article>
-    </section>
+      <!-- Articles Section -->
+      <section id="articles">
+        <h2>Featured Articles</h2>
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact</h2>
+        <article>
+          <h3>Building Accessible Web Pages</h3>
+          <p>
+            Accessibility ensures that websites are usable by everyone, including people with disabilities.
+            It involves proper structure, descriptive text, and meaningful navigation.
+          </p>
+          <a href="#" aria-label="Read more about building accessible web pages">Read More</a>
+        </article>
+
+        <article>
+          <h3>Understanding HTML5 Semantics</h3>
+          <p>
+            HTML5 introduced elements that give structure and meaning to web content, making pages easier for
+            both users and search engines to understand.
+          </p>
+          <a href="#" aria-label="Learn more about HTML5 semantic elements">Learn More</a>
+        </article>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you’d like to connect, you can reach me through the form below.</p>
+
+        <form action="#" method="post" aria-label="Contact Form">
+          <label for="name">Full Name:</label><br />
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required /><br /><br />
+
+          <label for="email">Email Address:</label><br />
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required /><br /><br />
+
+          <label for="message">Message:</label><br />
+          <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea><br /><br />
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- ✅ Footer Section -->
+    <footer role="contentinfo">
+      <p>&copy; 2025 Kevin Kiprotich. All Rights Reserved.</p>
       <p>
-        Have feedback or questions? Reach out via 
-        <a href="mailto:you@example.com">email</a>.
+        <a href="#top" aria-label="Back to top of page">Back to Top</a>
       </p>
-      <form aria-label="Contact form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button type="submit">Send</button>
-      </form>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 My Semantic Page | Built with accessibility and SEO in mind</p>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
+
